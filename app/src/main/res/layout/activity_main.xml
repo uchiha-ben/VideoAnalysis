@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.video.analysis.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抖音|火山下载"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_shape_1"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视频下载链接"/>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_shape_2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etUrl"
+                    android:background="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:hint="请输入视频分享链接"/>
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:background="@null"
+                    android:id="@+id/btnParse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始获取" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_shape_1"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小提示"
+                android:textColor="#000" />
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬目前仅支持抖音与抖音火山版无水印下载"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬修复下载后文件相册不显示问题"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬在上方粘贴短视频分享链接点击开始获取即可解析"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬打开悬浮窗功能即可体验短视频分享链接点击即刻下载"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬视频存储本地需要存储权限,若无开启参照下面悬浮窗"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬若未开启悬浮窗权限可手动进入设置->应用管理->选择本APP->权限->勾选悬浮窗"
+                    android:textColor="#000" />
+                <TextView
+                    android:id="@+id/tvPath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✬短视频无水印存储目录:"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="8dp">
+        <Button
+            android:id="@+id/btnClean"
+            android:background="@drawable/black_shape_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空链接"
+            android:textColor="#000" />
+        <Button
+            android:id="@+id/btnGood"
+            android:layout_marginLeft="-1dp"
+            android:background="@drawable/black_shape_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支持作者"
+            android:textColor="#000" />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
